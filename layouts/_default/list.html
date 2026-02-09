@@ -1,0 +1,16 @@
+{{ define "main" }}
+<section class="page-section">
+  <div class="container">
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ .Content }}
+    {{ range .Pages }}
+    <article class="post-card">
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      {{ if .Params.authors }}<p class="post-meta">{{ delimit .Params.authors ", " }}</p>{{ end }}
+      {{ if .Params.journal }}<p class="post-meta"><em>{{ .Params.journal }}</em> ({{ .Params.year }})</p>{{ end }}
+      {{ if .Summary }}<p>{{ .Summary }}</p>{{ end }}
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

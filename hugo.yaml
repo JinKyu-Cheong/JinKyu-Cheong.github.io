@@ -1,0 +1,81 @@
+baseURL: "https://jinkyu-cheong.github.io/"
+languageCode: "en-us"
+title: "Jin Kyu Cheong"
+# theme: ""
+
+# Build settings
+build:
+  writeStats: true
+
+# Taxonomies (expandable for lab site later)
+taxonomies:
+  tag: tags
+  category: categories
+
+# Markup settings
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: github
+
+# Output formats for GitHub Pages
+outputs:
+  home:
+    - HTML
+
+# Params
+params:
+  description: "Postdoctoral Researcher | Immunology · Epigenetics · Inflammatory Disease"
+  author: "Jin Kyu Cheong"
+
+  # Profile
+  profile:
+    name: "Jin Kyu Cheong"
+    title: "Postdoctoral Researcher"
+    affiliation: "Your Institution"
+    photo: "/images/profile.jpg"
+    bio: >
+      I am a postdoctoral researcher studying the intersection of immunology,
+      epigenetics, and inflammatory disease. My work focuses on understanding
+      how epigenetic mechanisms regulate immune cell function in the context
+      of chronic inflammation.
+
+  # Research interests
+  research_interests:
+    - "Immunology"
+    - "Epigenetics"
+    - "Inflammatory Disease"
+
+  # Social / academic links
+  social:
+    email: "jin.gyu.cheong88@gmail.com"
+    # github: "JinKyu-Cheong"
+    # google_scholar: ""
+    # orcid: ""
+    # twitter: ""
+    # linkedin: ""
+
+# Menu
+menus:
+  main:
+    - name: "About"
+      url: "/#about"
+      weight: 1
+    - name: "Publications"
+      url: "/publications/"
+      weight: 2
+    - name: "Contact"
+      url: "/contact/"
+      weight: 3
+    # Future sections (uncomment when ready)
+    # - name: "Team"
+    #   url: "/team/"
+    #   weight: 4
+    # - name: "Research"
+    #   url: "/research/"
+    #   weight: 5
+    # - name: "News"
+    #   url: "/news/"
+    #   weight: 6

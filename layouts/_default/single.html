@@ -1,0 +1,19 @@
+{{ define "main" }}
+<section class="page-section">
+  <div class="container content-narrow">
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ if .Params.authors }}<p class="post-meta">{{ delimit .Params.authors ", " }}</p>{{ end }}
+    {{ if .Params.journal }}<p class="post-meta"><em>{{ .Params.journal }}</em> ({{ .Params.year }})</p>{{ end }}
+    <div class="page-content">
+      {{ .Content }}
+    </div>
+    {{ if .Params.doi }}
+    <div class="pub-links">
+      <a href="https://doi.org/{{ .Params.doi }}" target="_blank" rel="noopener" class="btn">DOI</a>
+      {{ with .Params.pubmed }}<a href="https://pubmed.ncbi.nlm.nih.gov/{{ . }}" target="_blank" rel="noopener" class="btn btn-outline">PubMed</a>{{ end }}
+      {{ with .Params.pdf }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn btn-outline">PDF</a>{{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
