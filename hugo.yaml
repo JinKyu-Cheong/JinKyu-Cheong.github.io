@@ -63,7 +63,7 @@ menus:
       url: "/#about"
       weight: 1
     - name: "Research"
-      url: "/#research"
+      url: "/research/"
       weight: 2
     - name: "Publications"
       url: "/publications/"

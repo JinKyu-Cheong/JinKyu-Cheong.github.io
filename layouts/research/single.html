@@ -1,0 +1,30 @@
+{{ define "main" }}
+<section class="page-section">
+  <div class="container content-narrow">
+    <nav class="breadcrumb">
+      <a href="/research/">Research</a> <span>/</span> <span>{{ .Title }}</span>
+    </nav>
+
+    <h1 class="page-title">{{ .Title }}</h1>
+
+    <div class="research-single-meta">
+      {{ with .Params.tag }}<span class="research-single-tag">{{ . }}</span>{{ end }}
+      <time>{{ .Date.Format "January 2006" }}</time>
+    </div>
+
+    {{ with .Params.thumbnail }}
+    <div class="research-hero-img">
+      <img src="{{ . }}" alt="{{ $.Title }}" />
+    </div>
+    {{ end }}
+
+    <div class="page-content research-body">
+      {{ .Content }}
+    </div>
+
+    <div class="research-nav">
+      <a href="/research/" class="btn btn-outline">&larr; All Research</a>
+    </div>
+  </div>
+</section>
+{{ end }}
