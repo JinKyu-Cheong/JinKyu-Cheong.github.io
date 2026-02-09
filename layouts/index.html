@@ -98,6 +98,67 @@
   </div>
 </section>
 
+<!-- Research Section -->
+<section class="research-section" id="research">
+  <div class="container">
+    <h2>Research</h2>
+    <p class="research-intro">
+      My research focuses on understanding how inflammatory experiences are durably encoded
+      in hematopoietic stem and progenitor cells (HSPCs), and how this epigenetic memory
+      shapes immune output in health and disease.
+    </p>
+
+    <div class="research-project">
+      <h3>Epigenetic Memory of Infection in Innate Immune Cells</h3>
+      <!-- {{< figure src="/images/research/covid-epigenetics.png" caption="Epigenetic reprogramming of HSPCs after severe COVID-19 infection." >}} -->
+      <p>
+        Severe infections can leave lasting imprints on the immune system beyond adaptive immunity.
+        During my Ph.D., I discovered that severe COVID-19 establishes durable epigenetic and
+        transcriptional changes in HSPCs that persist for months to over a year post-infection.
+        Using single-cell multi-omic profiling (ATAC-seq + RNA-seq), I characterized how bone marrow
+        progenitors undergo chromatin remodeling that is conveyed to differentiated monocytes,
+        contributing to prolonged inflammatory phenotypes. I developed the <strong>PBMC-PIE</strong>
+        (Progenitor Input Enrichment) workflow to analyze rare circulating HSPCs from standard blood
+        draws, enabling non-invasive study of hematopoietic reprogramming in human patients.
+      </p>
+      <p class="research-pub">
+        <strong>Cheong JG</strong> et al. <em>Cell</em> (2023) &middot;
+        <a href="https://doi.org/10.1016/j.cell.2023.07.019" target="_blank" rel="noopener">DOI</a>
+      </p>
+    </div>
+
+    <div class="research-project">
+      <h3>Inflammatory Hematopoiesis in Intestinal Disease</h3>
+      <!-- {{< figure src="/images/research/ibd-hematopoiesis.png" caption="Hematopoietic reprogramming drives inflammatory monocyte production in Crohn's disease." >}} -->
+      <p>
+        Building on the framework of durable hematopoietic reprogramming, my current work
+        investigates how chronic intestinal inflammation rewires the bone marrow compartment.
+        Using high-resolution single-cell multi-omic atlases of circulating HSPCs and their
+        mature progeny in Crohn's disease, I uncovered that inflammatory signals from the gut
+        drive coordinated epigenetic and transcriptional changes across the hematopoietic
+        hierarchy — from stem cells through committed progenitors to mature monocytes. Using bone
+        marrow chimera models, I demonstrated that colitis-primed progenitors autonomously amplify
+        pathogenic inflammation, and that anti-TNF therapy can normalize these altered programs.
+      </p>
+    </div>
+
+    <div class="research-project">
+      <h3>Epigenetic Priming in Immune-Related Adverse Events</h3>
+      <!-- {{< figure src="/images/research/ici-colitis.png" caption="Pre-existing hematopoietic programs predict susceptibility to immune checkpoint inhibitor colitis." >}} -->
+      <p>
+        Immune checkpoint inhibitor (ICI) therapy has transformed cancer treatment, but up to 40%
+        of patients develop immune-related adverse events such as colitis. My ongoing research
+        investigates whether pre-existing epigenetic states in HSPCs can predict susceptibility
+        to ICI-associated colitis. By integrating longitudinal patient cohorts, single-cell
+        multi-omics, and murine models, I aim to define how interferon-driven hematopoietic
+        memory reprograms both immune and epithelial compartments, and how therapeutic interventions
+        remodel these programs while preserving anti-tumor immunity.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 {{ .Content }}
 
 {{ end }}

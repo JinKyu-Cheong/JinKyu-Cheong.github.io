@@ -1,0 +1,6 @@
+<figure class="research-figure">
+  <img src="{{ .Get "src" }}" alt="{{ .Get "caption" | default "" }}" loading="lazy" />
+  {{ with .Get "caption" }}
+  <figcaption>{{ . }}</figcaption>
+  {{ end }}
+</figure>
