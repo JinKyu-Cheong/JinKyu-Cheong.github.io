@@ -1,18 +1,15 @@
 baseURL: "https://jinkyu-cheong.github.io/"
 languageCode: "en-us"
-title: "Jin Kyu Cheong"
+title: "Jin-Gyu Cheong, Ph.D."
 # theme: ""
 
-# Build settings
 build:
   writeStats: true
 
-# Taxonomies (expandable for lab site later)
 taxonomies:
   tag: tags
   category: categories
 
-# Markup settings
 markup:
   goldmark:
     renderer:
@@ -20,44 +17,46 @@ markup:
   highlight:
     style: github
 
-# Output formats for GitHub Pages
 outputs:
   home:
     - HTML
 
-# Params
 params:
-  description: "Postdoctoral Researcher | Immunology · Epigenetics · Inflammatory Disease"
-  author: "Jin Kyu Cheong"
+  description: "Postdoctoral Research Fellow | Immunology · Epigenetics · Inflammatory Disease"
+  author: "Jin-Gyu Cheong"
 
-  # Profile
   profile:
-    name: "Jin Kyu Cheong"
-    title: "Postdoctoral Researcher"
-    affiliation: "Your Institution"
+    name: "Jin-Gyu Cheong, Ph.D."
+    title: "Postdoctoral Research Fellow"
+    affiliation: "Human Oncology & Pathogenesis Program, Memorial Sloan Kettering Cancer Center"
     photo: "/images/profile.jpg"
     bio: >
-      I am a postdoctoral researcher studying the intersection of immunology,
-      epigenetics, and inflammatory disease. My work focuses on understanding
-      how epigenetic mechanisms regulate immune cell function in the context
-      of chronic inflammation.
+      I am a postdoctoral research fellow in the lab of Dr. Rachel Niec at Memorial
+      Sloan Kettering Cancer Center. My research investigates how epigenetic mechanisms
+      shape innate immune memory, with a focus on hematopoietic stem and progenitor cells
+      (HSPCs) in the context of inflammation and tissue microenvironments.
+      During my Ph.D. with Dr. Steven Josefowicz at Weill Cornell Medicine, I uncovered
+      epigenetic reprogramming of innate immune cells and their bone marrow progenitors
+      following severe COVID-19 infection, published in *Cell* (2023). I developed the
+      PBMC-PIE workflow to analyze rare circulating HSPCs from human blood, enabling
+      new insights into how systemic inflammation imprints lasting changes on immune
+      cell development.
 
-  # Research interests
   research_interests:
-    - "Immunology"
+    - "Innate Immune Memory"
     - "Epigenetics"
+    - "Hematopoietic Stem Cells"
     - "Inflammatory Disease"
+    - "Tissue Immunology"
 
-  # Social / academic links
   social:
-    email: "jin.gyu.cheong88@gmail.com"
-    # github: "JinKyu-Cheong"
-    # google_scholar: ""
+    email: "cheongj@mskcc.org"
+    github: "JinKyu-Cheong"
+    google_scholar: "64DAiI8AAAAJ"
     # orcid: ""
     # twitter: ""
     # linkedin: ""
 
-# Menu
 menus:
   main:
     - name: "About"
@@ -69,7 +68,7 @@ menus:
     - name: "Contact"
       url: "/contact/"
       weight: 3
-    # Future sections (uncomment when ready)
+    # Future lab website sections
     # - name: "Team"
     #   url: "/team/"
     #   weight: 4
